@@ -1,5 +1,5 @@
 export default async function handler(req, res) {
-  // Получаем путь после /api/proxy/
+  // Убираем /api/proxy из пути
   const path = req.url.replace('/api/proxy', '');
   const targetUrl = `https://openrouter.ai/api/v1${path}`;
   
